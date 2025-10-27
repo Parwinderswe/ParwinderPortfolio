@@ -1,91 +1,17 @@
 import React, { useState } from "react";
 import ProjectPopup from "./ProjectPopup";
+import projects from "../../constants/projects";
 
 const ProjectGrid = ({ category }) => {
   //  const [showPopup, setShowPopup] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(null);
-  const projectList = [
-    {
-      name: "Matter Management",
-      category: "Backend",
-      Image:
-        "https://img.freepik.com/free-photo/software-developer-programming-coding_53876-111054.jpg?semt=ais_hybrid&w=740",
-      alt: "Feature Upgrade & Deployment",
-      description:
-        "Managed legal and operational matters with tailored workflows..",
-      projectOverview:
-        "Managed and created legal matters tailored to specific business units (PABUs). Linked responsible individuals to these matters and integrated a structured approval workflow, enforcing authority rules for actions and decisions.",
-      technologies: ["React", "JavaScript", "java", "next.js"],
-    },
-    {
-      name: "Organization Resource and Workflow System",
-      category: "Full Stack",
-      Image:
-        "https://img.freepik.com/free-photo/team-business-people-collaborating-project_53876-95800.jpg?semt=ais_hybrid&w=740",
-      alt: "Organization Resource and Workflow System",
-      description:
-        "Streamlined organizational resource management and workflow integration.",
-      projectOverview:
-        "Built comprehensive organizational profiles integrated with matters, managing roles, responsibilities, budgets, accruals, and timekeepers within defined workflows to enhance operational efficiency.",
-      technologies: ["React", "JavaScript", "java", "next.js", "TypeScript"],
-    },
-    {
-      name: "PABUs+Role based Security",
-      category: "Frontend",
-      Image:
-        "https://img.freepik.com/free-photo/web-development-concept-with-laptop_23-2148162928.jpg?semt=ais_hybrid&w=740",
-      alt: "Application Enhancement",
-      description:
-        "Developed comprehensive security protocols with user roles and permissions.",
-      projectOverview:
-        "Configured detailed security mechanisms for users, roles, and permissions tied to PABUs. Automated user associations to workflows based on permissions, enhancing secure access control across matters and organizational data for invoices",
-      technologies: ["React", "JavaScript", "java", "next.js"],
-    },
-    {
-      name: "Invoice Approval and Workflow Automation",
-      category: "Backend",
-      Image:
-        "https://img.freepik.com/free-photo/hands-typing-computer-keyboard_53876-102786.jpg?semt=ais_hybrid&w=740",
-      alt: "Core Module Development",
-      description:
-        "Designed an automated invoice approval system integrating rule-based workflows.",
-      projectOverview:
-        "Developed and implemented an automated invoice management system that linked invoices to specific matters and organizations. Defined customizable workflow rules ensuring systematic approval processes, validating authority levels, and automating decision outcomes (approval, rejection, pending, or failed).",
-      technologies: ["React", "JavaScript", "next.js"],
-    },
-    
-    {
-      name: "Scheduled Processing & Third-Party Integration",
-      category: "Frontend",
-      Image:
-        "https://img.freepik.com/free-photo/business-analytics-graph-financial-data-analysis_53876-136065.jpg?semt=ais_hybrid&w=740",
-      alt: "Data Visualization",
-      description:
-        "Automated invoice status transitions and post-approval actions, including exporting finalized data to external systems for reporting and collaboration.",
-      projectOverview:
-        `Invoices passed through predefined workflows,  routed to authorized users for approval. Based on authority and budget permissions, invoices were approved, rejected, or failed. Scheduled jobs finalized approved invoices, triggered data exports, and generated reports.However, timekeeper, budget, and accrual data—managed at the organization level—were synced via a collaboration portal, with follow-up actions performed based on their updated statuses.
-        `,
-      technologies: ["React", "JavaScript", "java", "next.js"],
-    },
-    {
-      name: "Project6",
-      category: "Tailwind CSS",
-      Image:
-        "https://img.freepik.com/free-photo/showing-cart-trolley-shopping-online-sign-graphic_53876-133967.jpg?semt=ais_hybrid&w=740",
-      alt: "E-commerce Platform",
-      description:
-        "Created seamless communication with external platforms for timekeeper, budget, and accrual data synchronization.",
-      projectOverview:
-        "Facilitated the exchange of critical financial information such as Timekeeper data, budgets, and accruals with third-party systems through collaborative portals. Monitored data synchronization status, performing necessary validations and actions within the primary application.",
-      technologies: ["React", "JavaScript", "java", "next.js"],
-    },
-  ];
+ 
 
   const selectedProject =
-    selectedIndex !== null ? projectList[selectedIndex] : null; //to show next image on popup
+    selectedIndex !== null ? projects[selectedIndex] : null; //to show next image on popup
 
   const handleNext = () => {
-    if (selectedIndex < projectList.length - 1) {
+    if (selectedIndex < projects.length - 1) {
       setSelectedIndex(selectedIndex + 1);
     }
   };
@@ -98,8 +24,8 @@ const ProjectGrid = ({ category }) => {
 
   const filteredProjects =
     category === "All Projects"
-      ? projectList
-      : projectList.filter((project) => project.category === category);
+      ? projects
+      : projects.filter((project) => project.category === category);
 
   return (
     <div className="grid grid-cols-1 gap-8 bg-white dark:bg-black md:grid-cols-2 lg:grid-cols-3">

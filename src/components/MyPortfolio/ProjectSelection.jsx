@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ProjectGrid from './ProjectGrid';
 
 function ProjectSelection() {
-     const categories = ['All Projects', 'Frontend', 'Backend', 'Java','Tailwind CSS'];
+     const categories = ['All Projects', 'Frontend', 'Backend','Fullstack'];
     const [activeCategory,setActiveCategory]=useState("All Projects")
  
     const btnBase ='inline-flex items-center justify-center h-10 px-4 font-medium transition-colors border rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50';
