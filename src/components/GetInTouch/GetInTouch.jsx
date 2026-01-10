@@ -61,7 +61,7 @@ function GetInTouch() {
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-3xl font-bold md:text-4xl">Get In Touch</h2>
           <div className="w-20 h-1 mx-auto mb-8 bg-brand-teal"></div>
-          <p className="max-w-3xl mx-auto text-2xl text-gray-500">
+          <p className="max-w-3xl mx-auto text-2xl text-gray-500 dark:text-gray-400">
             Have a project in mind or just want to chat? Feel free to reach out.
           </p>
         </div>
@@ -86,7 +86,7 @@ function GetInTouch() {
                     }
                     target="_blank"
                     rel="noreferrer"
-                    className="text-muted-foreground hover:text-brand-gold"
+                    className="text-muted-foreground hover:text-brand-gold dark:text-gray-400"
                   >
                     {info.detail}
                   </a>
@@ -102,7 +102,7 @@ function GetInTouch() {
                     href={link.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="p-3 text-2xl text-black rounded-full dark:text-white hover:bg-brand-teal/20 dark:hover:text-brand-gold bg-gray-400/30"
+                    className="p-3 text-2xl text-black rounded-full dark:text-white hover:bg-brand-teal/20 dark:hover:text-brand-gold bg-gray-400/30 dark:bg-gray-800/70"
                   >
                     {link.icon}
                   </a>
@@ -111,7 +111,7 @@ function GetInTouch() {
             </div>
           </div>
 
-          <div className="p-8 border rounded-lg shadow-md border-border">
+          <div className="p-8 border rounded-lg shadow-md border-border bg-white/80 dark:bg-gray-900/60 dark:border-white/10">
             <h3 className="mb-6 text-2xl font-semibold">Send Me a Message</h3>
             <form onSubmit={handleSubmit}>
               {["Name", "Email", "Subject", "Message"].map((label) => {
@@ -134,7 +134,7 @@ function GetInTouch() {
                         rows="4"
                         value={formData[label.toLowerCase()]}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 text-black border rounded-md border-input focus:outline-none focus:ring-2 focus:ring-brand-gold"
+                        className="w-full px-4 py-2 text-black border rounded-md border-input focus:outline-none focus:ring-2 focus:ring-brand-gold dark:bg-gray-900 dark:text-white dark:border-gray-700"
                         required={isRequired}
                       />
                     ) : (
@@ -143,7 +143,7 @@ function GetInTouch() {
                         type="text"
                         value={formData[label.toLowerCase()]}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 text-black border rounded-md border-input focus:outline-none focus:ring-2 focus:ring-brand-gold"
+                        className="w-full px-4 py-2 text-black border rounded-md border-input focus:outline-none focus:ring-2 focus:ring-brand-gold dark:bg-gray-900 dark:text-white dark:border-gray-700"
                         required={isRequired}
                       />
                     )}

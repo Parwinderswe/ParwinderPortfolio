@@ -28,11 +28,11 @@ const ProjectGrid = ({ category }) => {
       : projects.filter((project) => project.category === category);
 
   return (
-    <div className="grid grid-cols-1 gap-8 bg-white dark:bg-black md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-8 md:gap-10 md:grid-cols-2 lg:grid-cols-3">
       {filteredProjects.map((project, index) => (
         <div
           key={index}
-          className="overflow-hidden transition-all border rounded-lg shadow-md bg-card border-border hover:shadow-lg"
+          className="overflow-hidden transition-all border rounded-2xl shadow-sm bg-white/90 border-black/5 hover:shadow-xl hover:-translate-y-1 dark:bg-gray-900/70 dark:border-white/10"
         >
           <div className="relative h-48 overflow-hidden cursor-pointer group">
             <img

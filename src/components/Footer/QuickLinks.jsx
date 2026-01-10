@@ -3,7 +3,7 @@ import React from 'react'
 function QuickLinks() {
     // const linksList =["About",""]
   return (
-    <div>
+    <div className="text-left">
     <h3 className='mb-4 text-xl font-bold'>Quick Links</h3>
     <ul className='space-y-2 '>
         <li>

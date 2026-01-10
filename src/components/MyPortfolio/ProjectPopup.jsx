@@ -13,11 +13,11 @@ function ProjectPopup({
 }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-      <div className="bg-card rounded-lg w-full max-w-6xl max-h-[90vh] overflow-y-auto">
-        <div className="sticky top-0 z-10 flex items-center justify-between p-4 text-black bg-white border-b border-gray-500 dark:text-white dark:border-gray-200 dark:bg-slate-900">
+      <div className="bg-card rounded-lg w-full max-w-6xl max-h-[90vh] overflow-y-auto border border-black/5 dark:border-white/10 dark:bg-gray-900 text-black dark:text-white">
+        <div className="sticky top-0 z-10 flex items-center justify-between p-4 bg-white border-b border-gray-500 dark:border-gray-700 dark:bg-slate-900">
           <h3 className="text-2xl font-bold ">{name}</h3>
           <button
-            className="p-1 rounded-full hover:bg-gray-200"
+            className="p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
             onClick={onClose}
           >
             <MdCancel size={40} />

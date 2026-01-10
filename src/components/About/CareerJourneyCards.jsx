@@ -43,8 +43,8 @@ function CareerJourneyCards() {
     <div className="max-w-4xl mx-auto ">
       <h3 className="mb-12 text-2xl font-bold text-center">Career Journey</h3>
       <div className="relative">
-        <div className="absolute w-1 h-full transform -translate-x-1/2 bg-blue-400 left-1/2"></div>
-        <div className="space-y-16">
+        <div className="absolute w-0.5 h-full transform -translate-x-1/2 bg-brand-teal/40 left-1/2 dark:bg-brand-teal/30 hidden md:block"></div>
+        <div className="space-y-12">
           {timeline.map((items,idx) => (
             <CareerJourneyCard
             key={items.year}
