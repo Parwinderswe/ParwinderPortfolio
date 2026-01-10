@@ -7,16 +7,16 @@ function QuickLinks() {
     <h3 className='mb-4 text-xl font-bold'>Quick Links</h3>
     <ul className='space-y-2 '>
         <li>
-            <a href="#about" className='transition-colors hover:text-purple-500'>About</a>
+            <a href="#about" className='transition-colors hover:text-brand-gold'>About</a>
             </li>
             <li>
-                <a href="#skills" className='transition-colors hover:text-purple-500'>Skills</a>
+                <a href="#skills" className='transition-colors hover:text-brand-gold'>Skills</a>
             </li>
         <li>
-            <a href="#portfolio" className='transition-colors hover:text-purple-500'>Portfolio</a>
+            <a href="#portfolio" className='transition-colors hover:text-brand-gold'>Portfolio</a>
         </li>
         <li>
-            <a href="#contact" className='transition-colors hover:text-purple-500'>Contact</a>
+            <a href="#contact" className='transition-colors hover:text-brand-gold'>Contact</a>
         </li>
         
         

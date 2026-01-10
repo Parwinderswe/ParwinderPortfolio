@@ -42,7 +42,7 @@ const ProjectGrid = ({ category }) => {
             ></img>
 
             {/* Purple tint layer using a real div for compatibility */}
-            <div className="absolute inset-0 z-10 transition-opacity duration-300 opacity-0 pointer-events-none bg-purple-700/30 group-hover:opacity-100" />
+            <div className="absolute inset-0 z-10 transition-opacity duration-300 opacity-0 pointer-events-none bg-brand-teal-dark/30 group-hover:opacity-100" />
 
             {/* View Details Text */}
             <div className="absolute inset-0 z-20 flex items-center justify-center font-bold text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">
@@ -70,7 +70,7 @@ const ProjectGrid = ({ category }) => {
               )}
             </div>
             <button
-              className="inline-flex items-center justify-center w-full px-3 text-sm font-medium transition-colors bg-transparent border rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 border-input hover:bg-accent hover:text-accent-foreground h-9 hover:bg-red-400 hover:text-gray-100"
+              className="inline-flex items-center justify-center w-full px-3 text-sm font-medium transition-colors bg-transparent border rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold disabled:opacity-50 border-input hover:bg-brand-gold hover:text-white h-9"
               onClick={() => setSelectedIndex(index)}
             >
               View Project

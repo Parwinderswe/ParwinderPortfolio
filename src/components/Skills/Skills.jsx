@@ -10,7 +10,7 @@ const Skills = () => {
           <h1 className="mb-4 text-3xl font-bold md:text-4xl">
             Skills & Expertise
           </h1>
-          <div className="w-20 h-1 mx-auto mb-8 bg-purple-500"></div>
+          <div className="w-20 h-1 mx-auto mb-8 bg-brand-teal"></div>
           <p className="max-w-3xl mx-auto text-lg text-opacity-100 text-muted-foreground">
             With 6+ years in software engineering, I've developed a diverse set
             of skills spanning frontend, backend, and infrastructure

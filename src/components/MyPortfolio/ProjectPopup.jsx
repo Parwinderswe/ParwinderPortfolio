@@ -62,7 +62,7 @@ function ProjectPopup({
 
           <div className="flex justify-center mt-4 ">
             {/* <a href='#' target='_blank' rel='noreferrer'>
-  <button className='inline-flex items-center justify-center h-10 px-4 font-medium text-white transition-colors bg-purple-400 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 text-Purple-600 hover:bg-purple-400/80'
+  <button className='inline-flex items-center justify-center h-10 px-4 font-medium text-white transition-colors bg-brand-teal rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold disabled:opacity-50 hover:bg-brand-teal-dark'
   >Visit Project</button>
 </a> */}
           </div>

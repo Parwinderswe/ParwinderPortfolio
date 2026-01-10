@@ -16,8 +16,8 @@ function ProjectSelection() {
         <button key={index} 
         onClick={()=>setActiveCategory(category)}
         className={`${btnBase} ${isActive
-            ?'bg-purple-400 text-black border-transparent'
-            :'bg-transparent dark:text-white border-input hover:bg-red-400 hover:text-gray-100'}`}>
+            ?'bg-brand-teal text-white border-transparent'
+            :'bg-transparent dark:text-white border-input hover:bg-brand-gold hover:text-white'}`}>
                 {category}
             </button>
 )})}

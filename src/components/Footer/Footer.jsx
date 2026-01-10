@@ -20,7 +20,7 @@ const Footer =()=>{
         },
       ];
     return(
-        <div className='px-4 pt-12 pb-1 text-gray-600 bg-gray-50 dark:bg-gray-900 dark:text-gray-100'>
+        <div className='px-4 pt-12 pb-1 text-gray-600 bg-brand-cream dark:bg-gray-900 dark:text-gray-100'>
             <div className='grid grid-cols-1 gap-12 mb-16 md:grid-cols-3'>
                 <div>
                 <h3 className='mb-4 text-xl font-bold'>Parwinder</h3>
@@ -32,7 +32,7 @@ const Footer =()=>{
                     href={link.href}
                     target="_blank"
                     rel="noreferrer"
-                    className='transition-colors hover:text-purple-600 '>{link.icon}</a>
+                    className='transition-colors hover:text-brand-gold '>{link.icon}</a>
                     ))}
                 </div>
             </div>

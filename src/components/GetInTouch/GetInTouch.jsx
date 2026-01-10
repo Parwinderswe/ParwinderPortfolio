@@ -60,7 +60,7 @@ function GetInTouch() {
       <div className="container px-4 mx-auto">
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-3xl font-bold md:text-4xl">Get In Touch</h2>
-          <div className="w-20 h-1 mx-auto mb-8 bg-blue-500"></div>
+          <div className="w-20 h-1 mx-auto mb-8 bg-brand-teal"></div>
           <p className="max-w-3xl mx-auto text-2xl text-gray-500">
             Have a project in mind or just want to chat? Feel free to reach out.
           </p>
@@ -71,8 +71,8 @@ function GetInTouch() {
             <h3 className="mb-6 text-3xl font-bold">Contact Information</h3>
             {contact.map((info, idx) => (
               <div key={idx} className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-purple-400/10">
-                  <span className="text-2xl text-purple-600">{info.img}</span>
+                <div className="p-3 rounded-full bg-brand-teal/10">
+                  <span className="text-2xl text-brand-teal">{info.img}</span>
                 </div>
                 <div className="text-lg">
                   <h4 className="font-medium">{info.title}</h4>
@@ -86,7 +86,7 @@ function GetInTouch() {
                     }
                     target="_blank"
                     rel="noreferrer"
-                    className="text-muted-foreground hover:text-purple-500"
+                    className="text-muted-foreground hover:text-brand-gold"
                   >
                     {info.detail}
                   </a>
@@ -102,7 +102,7 @@ function GetInTouch() {
                     href={link.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="p-3 text-2xl text-black rounded-full dark:text-white hover:bg-purple-400 dark:hover:text-purple-500 bg-gray-400/30"
+                    className="p-3 text-2xl text-black rounded-full dark:text-white hover:bg-brand-teal/20 dark:hover:text-brand-gold bg-gray-400/30"
                   >
                     {link.icon}
                   </a>
@@ -134,7 +134,7 @@ function GetInTouch() {
                         rows="4"
                         value={formData[label.toLowerCase()]}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 text-black border rounded-md border-input focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        className="w-full px-4 py-2 text-black border rounded-md border-input focus:outline-none focus:ring-2 focus:ring-brand-gold"
                         required={isRequired}
                       />
                     ) : (
@@ -143,7 +143,7 @@ function GetInTouch() {
                         type="text"
                         value={formData[label.toLowerCase()]}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 text-black border rounded-md border-input focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        className="w-full px-4 py-2 text-black border rounded-md border-input focus:outline-none focus:ring-2 focus:ring-brand-gold"
                         required={isRequired}
                       />
                     )}
@@ -153,7 +153,7 @@ function GetInTouch() {
 
               <button
                 type="submit"
-                className="inline-flex items-center justify-center w-full h-10 px-4 font-medium text-white transition-colors bg-purple-600 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 hover:bg-purple-700"
+                className="inline-flex items-center justify-center w-full h-10 px-4 font-medium text-white transition-colors bg-brand-teal-dark rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold disabled:opacity-50 hover:bg-brand-teal"
               >
                 Send Message
               </button>
