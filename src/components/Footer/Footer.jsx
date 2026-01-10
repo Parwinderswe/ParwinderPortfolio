@@ -20,8 +20,8 @@ const Footer =()=>{
         },
       ];
     return(
-        <div className='px-4 pt-12 pb-1 text-gray-600 bg-brand-cream dark:bg-gray-900 dark:text-gray-100'>
-            <div className='grid grid-cols-1 gap-12 mb-12 md:grid-cols-3'>
+        <div className='pt-12 pb-1 text-gray-600 bg-brand-cream dark:bg-gray-900 dark:text-gray-100'>
+            <div className='container grid grid-cols-1 gap-12 px-4 mx-auto mb-12 md:grid-cols-3'>
                 <div>
                 <h3 className='mb-4 text-xl font-bold'>Parwinder Kaur</h3>
                 <p className='mb-6 '>Full-stack software engineer focused on React, Java, and SQL-backed systems. I build reliable products with clean architecture and measurable impact.</p>

@@ -7,12 +7,14 @@ function HeroSection() {
     <section className="relative flex items-center min-h-screen pt-20 overflow-hidden text-black transition-colors duration-500 bg-white dark:bg-gray-950 dark:text-white">
     <div className='absolute inset-0 bg-gradient-to-br from-brand-teal/20 to-brand-gold/10 dark:from-brand-teal/10 dark:to-black -z-10'></div>
     <div className='noise-bg'></div>
-    <div className='container px-4 mx-auto'>
+    <div className='container px-4 mx-auto md:px-6'>
         <div className='grid items-center grid-cols-1 gap-12 lg:grid-cols-2'>
             <div className='order-2 space-y-6 text-center lg:order-1 lg:text-left'>
-             <span className="inline-block font-medium text-brand-gold dark:text-brand-gold lg:hidden">Software Engineer</span>
             <h1 className="text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
-              Hi, I'm <span className="ml-2 text-brand-teal dark:text-brand-teal">Parwinder Kaur</span>
+              Hi, I'm{" "}
+              <span className="inline-block ml-2 whitespace-nowrap text-brand-teal dark:text-brand-teal">
+                Parwinder Kaur
+              </span>
             </h1>
             <p className="max-w-xl mx-auto text-lg text-gray-700 dark:text-gray-400 md:text-xl lg:mx-0">
               Hi, I&apos;m a full‑stack software engineer who turns complex requirements into elegant, reliable web experiences.
@@ -48,13 +50,16 @@ function HeroSection() {
             </div>
             </div>
             <div className='flex justify-center order-1 mt-2 lg:order-2 lg:mt-0 lg:justify-end'>
-                <div className='relative'>
+                <div className='relative text-center lg:text-left'>
                     <div className='absolute rounded-full -inset-10 bg-brand-teal/20 blur-3xl'></div>
                     <div className='absolute w-24 h-24 rounded-full -right-8 -top-8 bg-brand-gold/30 blur-xl'></div>
                     <div className='relative w-56 h-56 overflow-hidden border-[6px] border-white/80 rounded-full shadow-2xl sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 dark:border-gray-900'>
                         <img src={ParwinderImg} alt='Parwinder Kaur' 
                         className='object-cover object-center w-full h-full'></img>
                     </div>
+                    <span className="block mt-4 text-center font-medium text-brand-gold dark:text-brand-gold lg:hidden">
+                      Software Engineer
+                    </span>
                 </div>
             </div>
         </div>

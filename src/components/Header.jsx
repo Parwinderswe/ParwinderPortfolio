@@ -22,8 +22,8 @@ function Header() {
   }, [theme]);
 
   return (
-    <div className="fixed top-0 z-50 w-full px-6 py-4 transition-colors duration-300 bg-white shadow-md dark:bg-black md:px-12">
-      <div className="flex items-center justify-between">
+    <div className="fixed top-0 z-50 w-full transition-colors duration-300 bg-white shadow-md dark:bg-black">
+      <div className="container flex items-center justify-between px-4 py-4 mx-auto md:px-6">
       <div className="flex items-center gap-3">
         <img
           src="/parwinder-kaur.png"
@@ -84,7 +84,7 @@ function Header() {
       </div>
 
       <nav
-        className={`mt-4 flex flex-col gap-3 text-black dark:text-white md:hidden ${
+        className={`container mx-auto mt-4 flex flex-col gap-3 px-4 text-black dark:text-white md:hidden ${
           isMenuOpen ? "block" : "hidden"
         }`}
       >
